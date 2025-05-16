@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+html{
+  font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    background-color: #30292f;
+    margin: 0%;
+}
+
+#titulo{
+    background-color: #74D3AE; /*Cor utilizada para o fundo*/
+    width: 1000px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    display: flex; /*Esse display tá dando margem pra todos os itens dentro da tag para que esses itens não fiquem grudados nos cantos, porém ainda não são flutuantes*/
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 5px 5px 50px #2d6868;
+    flex-direction: column;  
+}
+
+h1#nome{
+    /* background-color: white; */
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    color: #1e2875;
+    font-size: 100px;
+    justify-content: center;
+    align-items:center;
+    text-shadow: 3px 3px 5px #1e2875;
+    font-family: "JetBrains Mono";
+    margin-bottom: 15px;
+}
+
+#tempo{
+    /* background-color: red; */
+    width: 900px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ano2025{
+    /* background-color: green; */
+    width: 250px;
+    height: 40px;
+    display: flex;
+    color: #1e2875;
+    font-family: "JetBrains Mono";
+    font-size: 30px;
+    justify-content: right;
+    text-shadow: 3px 3px 5px #1e2875;
+}
+
+.ano2026{
+    /* background-color: green; */
+    width: 250px;
+    height: 40px;
+    display: flex;
+    color: #1e2875;
+    font-family: "JetBrains Mono";
+    font-size: 30px;
+    justify-content: left;
+    text-shadow: 3px 3px 5px #1e2875;
+}
+
+#linha{
+    background-color: #1e2875;
+    width: 150px;
+    height: 5px;
+    box-shadow: 3px 3px 15px #1e2875;
+    display: flex;
+    margin-top: 0px; /*Aqui é pra mexer na altura da linha entre os 2 anos*/
+}
+
+nav{
+    /* background-color: red; */
+    width: 900px;
+    height: 34px;
+    display: flex; /*Lembrar de colocar o display pois ele fará que as coisas dentro dessa tag fique modificavel, no caso inclui a posição*/
+    color: #1e2875;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "JetBrains Mono";
+
+}
+
+a:link{
+    text-decoration: none;/*Aqui ele tira qualquer atributo dado aos links*/
+    color: #30292f;
+
+}
+
+a:visited{
+    color: #00b295/*cor dos links visitados*/
+    
+}
+
+a:hover{
+    color: green;/*cor dos links quando o mouse estiver em cima*/
+    transform: scale(1.05);
+    animation-duration: 2s;/*COMO RAIOS FAZEMOS ISSO*/
+}
+
+a:active{
+    color: #2c1d39;/*cor dos link quando estiver segurando ele(ativo)*/
+}
+
+section#aboutme{
+    background-color: #74D3AE;
+    width: 1100px;
+    height: 590px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 50px #2d6868;
+    display: flex;
+}
+
+#imagemeu{
+    background-color: #333333;
+    width: 400px;
+    height: 350px;
+
+
+}
+
+#ajusteimg{
+    width: 400px;
+    height: 350px;
+    
+}
+
+#tweetfoto{
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    margin-top: 45px;
+    margin-left: 45px;
+    border-radius: 35px;
+    flex-direction: column;/*importante dar este flex aqui pois ele quem vai mudar a ordem, antes estava na horizontal, após este comando ele irá para vertical fazendo com que a foto fique em baixo, assim definindo as coisas que ficarão na direita pelo espaçamentohorizontais das caixas.*/
+    box-shadow: 5px 5px 50px #222222;
+}
+
+.bolas{/*Usei a cor abaixo só pra ver onde tava as bolas hmmm granola rs*/
+    /* background-color: blue; */
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    margin: 25px 10px 0 25px;
+    
+}
+
+.bolas#backgcolor{
+    background-color: #30292f;
+    display: flex;
+}
+
+.bolas#boxshcolor{
+    background-color: #2d6868;
+    display: flex;
+}
+
+.bolas#txtcolor{
+    background-color: #1e2875;
+    display: flex;
+    margin-right: 75px;/*Aqui é pra dar espaçamento para o about me do tweet*/
+}
+
+#ballsarea{
+    /* background-color: green; */
+    width: 400px;
+    height: 75px;
+    display: flex; /*Maldito display que me fez encarar este quadro por 2h (ele quem faz a bolas ficarem na horizontal)*/
+    clear: right;
+
+}
+
+#txtaboutme{
+    /* background-color: purple; */
+    width: 605px;
+    height: 590px;
+    margin-left: 40px; 
+}
+
+#pequenoaboutme{
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: "JetBrains Mono";
+}
+
+#aboutmegg{
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+#aboutmetxt{
+    font-size: 22px;
+    margin-top: -20px;
+    margin-bottom: 50px
+}
+
+/* section#ability{
+    background-color: #102542; /*Ideia retirada*/
+    /* margin: -30px 0 -30px 0;
+} */
+
+
+.caixaability{
+    /* background-color: #74D3AE; */
+    width: 1300px; /*aqui é o tamanho da caixa*/
+    height: 260px;/*800px é o original como tem 2 fica 400 400og 350*/
+    margin: 20px auto 120px auto ;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+}
+
+p#abilitygg{
+    font-size: 60px;
+    margin: 10px auto 0px auto;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+.caixaability#primeiracaixa{
+    height: 260px;
+    /* margin: -10px auto 10px auto; */
+    flex-direction: column;
+
+}
+
+#encaixedasdivisorias{
+    /* background-color: purple; */
+    width: 1300px; /*tem que ir junto com a tag caixaability 1600*/
+    height: 260px;
+    display: flex;
+    justify-content: space-between  ;
+    /* padding: 0px 0 0 0; */
+
+}
+
+.divisao2{
+    background-color: #2d6868;
+    width: 633px; /*O numero máx desse é 1/2 do width do encaixe 780*/
+    height: 260px;
+    display: flex;
+    box-shadow: 5px 5px 50px #00b295;
+}
+
+.imgability{
+    /* background-color: red; */
+    width: 284px; /*350 og*/
+    height: 260px;
+
+}
+
+.abilitytxt{
+    background-color: #2d6868;
+    width: 348px; /*Esse numero somado ao width do img tem que dar no máx o div2 430og*/
+    height: 260px;
+    /* margin: 0 -10px 0 0; */
+    padding: 0px 0px 0px 10px;
+    color: white;
+}
+
+h1.abilitytitulo{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.listagem{
+    font-size: 19px;
+    margin: 0 -10px 0 0;
+}
+
+.listagem#idioma{
+    font-size: 21px;
+    margin: 40px 0 0 0;
+}
+
+.listagem#aprendizado{
+    margin: -10px 0 0 0;
+}
+
+.listagem#interpessoal{
+    font-size: 18px;
+    margin: 20px 0 0 0;
+}
+
+footer{
+    background-color: #1e2875;
+    width: 100%;
+    height: 450px;
+}
+
+h1#contatote{ 
+    margin: 0px 0 0px 75px;
+    font-size: 65px;
+}
+
+#div2ctt{
+    background-color: red;
+    width: 450px;
+    height: 50px;
+    margin: 0 0 0 50px;
+}
+
+.logos{
+    height: 50px;
+    width: 50px;
+    color: #00b295;
+    font-size: 32px;
+}
+
+#reg{
+    font-size: 30px;
+}
